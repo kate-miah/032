@@ -38,7 +38,7 @@ console.log(num1);
 num1-= 55; // 37.75
 console.log(num1);
 
-function weather() {
+function sayCoolWeather() {
     alert('Сегодня отличный день')
 }
-weather()
+sayCoolWeather()
