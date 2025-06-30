@@ -38,7 +38,35 @@ console.log(num1);
 num1-= 55; // 37.75
 console.log(num1);
 
-function sayCoolWeather() {
-    alert('Сегодня отличный день')
+// function sayCoolWeather() {
+//     alert('Сегодня отличный день')
+// }
+// sayCoolWeather()
+
+// let userName = null;
+// if(true) {
+//     userName= 'John';
+// }
+// console.log(userName)
+
+// function sayHello() {
+//     let userName = 'Аноним';
+//     console.log('Привет, ' + userName)
+//     return 5;
+// }
+// let resultOfFunction = sayHello();
+// console.log('Result of functionion word is ' + resultOfFunction);
+
+function getSumOfTwoNumber(num1, num2) {
+    let result = num1 + num2;
+    return result;
 }
-sayCoolWeather()
+let resultOfFunction = getSumOfTwoNumber(2, 5);
+ console.log('Result of functionion word is ' + resultOfFunction);
+
+ //function getSumOfTwoNumber(num1, num2 = 1) {
+//     let result = num1 + num2;
+//     return result;
+// }
+// let resultOfFunction = getSumOfTwoNumber(2);
+//  console.log('Result of functionion word is ' + resultOfFunction);
