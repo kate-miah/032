@@ -8,7 +8,7 @@ let c = 10;
 let d = 2;
 console.log(c / d);
 
-3
+//3
 let num = 1;
 num++; // 2
 console.log(num);
@@ -37,3 +37,8 @@ num1/= 44; // 17.25
 console.log(num1);
 num1-= 55; // 37.75
 console.log(num1);
+
+function weather() {
+    alert('Сегодня отличный день')
+}
+weather()
