@@ -70,3 +70,10 @@ let resultOfFunction = getSumOfTwoNumber(2, 5);
 // }
 // let resultOfFunction = getSumOfTwoNumber(2);
 //  console.log('Result of functionion word is ' + resultOfFunction);
+
+function getMultiOfTwoNumber(num1, num2) {
+    let result = num1 * num2;
+    return result;
+}
+let resultOfFunction1 = getMultiOfTwoNumber(2, 5);
+ console.log('Result of functionion word is ' + resultOfFunction1);
