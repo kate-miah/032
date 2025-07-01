@@ -121,18 +121,18 @@ let action = prompt('Какое действие вы хотите выполн�
 
 let result = null;
 
-if (action === '*'){
-    result = multy(num1, num2);
-} else if (action === '/') {
-    result = div(num1, num2);
-} else if (action ==='+') {
-    result = sum(num1, num2);
-} else if (action === '-') {
-    result =  sub(num1, num2)
-} else {
-    alert('Error');
-    return
-}
+// if (action === '*'){
+//     result = multy(num1, num2);
+// } else if (action === '/') {
+//     result = div(num1, num2);
+// } else if (action ==='+') {
+//     result = sum(num1, num2);
+// } else if (action === '-') {
+//     result =  sub(num1, num2)
+// } else {
+//     alert('Error');
+//     return
+// }
 alert('Result = ' + result);
 }
 
@@ -150,3 +150,25 @@ function sub(num1, num2) {
     } 
     calculate()
 
+// switsh-case
+switch(action) {
+    case '*': {
+        result = multy(num1, num2);
+        break;
+    }
+    case '/': {
+        result = div(num1, num2);
+        break;
+    }
+    case '+': {
+        result = sum(num1, num2);
+        break;
+    }
+    case '-': {
+        result =  sub(num1, num2);
+        break;
+    }
+    default: {
+         alert('Error');
+    }
+}
