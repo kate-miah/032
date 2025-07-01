@@ -57,6 +57,7 @@ console.log(num1);
 // let resultOfFunction = sayHello();
 // console.log('Result of functionion word is ' + resultOfFunction);
 
+//Function declaration
 function getSumOfTwoNumber(num1, num2) {
     let result = num1 + num2;
     return result;
@@ -77,3 +78,14 @@ function getMultiOfTwoNumber(num1, num2) {
 }
 let resultOfFunction1 = getMultiOfTwoNumber(2, 5);
  console.log('Result of functionion word is ' + resultOfFunction1);
+
+ //Functin expression
+ let getDivide = function (num3,num4) {
+    return num3/num4;
+ }
+getDivide(4, 2);
+
+//Arrow function
+
+let getSquare = x => x*x;
+console.log(getSquare(6));
