@@ -89,3 +89,64 @@ getDivide(4, 2);
 
 let getSquare = x => x*x;
 console.log(getSquare(6));
+
+
+// Tasks
+
+function getNumber (num5, num6) {
+    if (num5 > num6) {
+        return num5
+    } else {
+        return num6
+    }
+
+} 
+let resultNumber = getNumber(5,6)
+console.log(resultNumber);
+
+// Task 
+
+function isEven (num7) {
+    if (num7 % 2 == 0) {
+        return true
+    }  
+    return false
+}
+
+// Task
+function calculate() {
+let num1 = Number(prompt('Введите первое число'));
+let num2 =Number(prompt('Введите второе число'));
+let action = prompt('Какое действие вы хотите выполнить: умножение, деление, сложение или вычисление? Введие символ');
+
+let result = null;
+
+if (action === '*'){
+    result = multy(num1, num2);
+} else if (action === '/') {
+    result = div(num1, num2);
+} else if (action ==='+') {
+    result = sum(num1, num2);
+} else if (action === '-') {
+    result =  sub(num1, num2)
+} else {
+    alert('Error');
+    return
+}
+alert('Result = ' + result);
+}
+
+function multy(num1, num2) {
+        return num1 * num2;  
+    } 
+function div(num1, num2) {
+        return num1 / num2;
+    }
+function sum(num1, num2) {
+        return num1 + num2;
+    }
+function sub(num1, num2) {
+        return num1 - num2;
+    } 
+    calculate()
+
